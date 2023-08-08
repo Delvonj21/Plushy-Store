@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plushy Store</title>
+</head>
+<body>
+<header>
+      <div class="header-container">
+            <div class="top">
+                  <p>FREE PHONE GRIP ON SELECT PURCHASES</p>
+            </div>
+            <div class="middle">
+                  <h2 class="title">PlushStar</h2>
+                  <form>
+                        <input class="search" type="text" placeholder="Search..">
+                  </form>
+                  <span id="cart" class="cart-number">0</span><img src="./images/cart-dark.png" alt="cart" class="c-icon">
+              </div>
+              <div class="bottom">
+                  <nav>
+                    <a href="#">Home</a>
+                    <a href="#">New</a>
+                    <a href="#" class="a-underline"><b>Products</b></a>
+                    <a href="#">Sales</a>
+                    <a href="#">Blog</a>
+                    <a href="#" onclick="callAlert()">Contact Us</a>
+                    
+                  </nav>
+              </div>
+      </div>
+</header>
+<main>
+      <div class="main-container">
+        <div class="main-head">
+            <h1>Plushy Store</h1>
+        </div>
+        <div class="select-bar">
+            <p>62 Products, sorted by <span class="sorted" id="text"><b>Best Selling</b></span></p>
+            <form> 
+              <label>Sort By</label>
+              <select name="products" id="sort-items" onchange="valueChange()">
+                <option value="Best Selling">Best Selling</option>
+                <option value="Price">Price</option>
+              </select> 
+            </form> 
+        </div>
+        <div class="row">
+          <div class="column">
+              <img src="./images/product-image.png" alt="mouse" width="220" >
+              <div class="column">
+                <p class="plushy-name">Mischief Mouse</p>
+                <button onclick="buy()">BUY</button>
+              </div>
+          </div>
+          <div class="column">
+            <img src="./images/product-image.png" alt="shrew" width="220" >
+            <div class="column">
+                  <p class="plushy-name">Shy Shrew</p>
+                  <button onclick="buy()">BUY</button>
+            </div>
+        </div>
+        <div class="column">
+          <img src="./images/product-image.png" alt="hamster" width="220" >
+          <div class="column">
+                <p class="plushy-name">Hangry Hamster</p>
+                <button onclick="buy()">BUY</button>
+          </div>
+      </div>
+      <div class="column">
+        <img src="./images/product-image.png" alt="chinchilla" width="220" >
+        <div class="column">
+          <p class="plushy-name">Chilly Chinchilla</p>
+          <button onclick="buy()">BUY</button>
+        </div>
+    </div>
+    </div>
+      </div>
+</main>
+<script src="script.js"></script>  
+</body>
+</html>
